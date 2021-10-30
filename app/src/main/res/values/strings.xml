@@ -1,0 +1,25 @@
+<resources>
+  <string name="appName">PrismetricTest</string>
+  <string name="navigation_drawer_open">Open navigation drawer</string>
+  <string name="navigation_drawer_close">Close navigation drawer</string>
+  <string name="men">Men</string>
+  <string name="women">Women</string>
+  <string name="kids">Kids</string>
+  <string name="beauty">Beauty</string>
+  <string name="footwear">Footwear</string>
+  <string name="trending">Trending</string>
+  <string name="dealsOfTheDay">Deals of the day</string>
+  <string name="categories">Categories</string>
+  <string name="shippingPolicy">Shipping Policy</string>
+  <string name="returnPolicy">Return Policy</string>
+  <string name="aboutUs">About Us</string>
+  <string name="termsAndCondition">Terms &amp; Condition</string>
+  <string name="privacyPolicy">Privacy Policy</string>
+  <string name="contactUs">Contact Us</string>
+  <string name="logOut">Logout</string>
+  <string name="companyDetails">Company Details.</string>
+  <string name="dummyName">Haley lawrence</string>
+  <string name="dummyEmail">Haley.lawrence@gmail.com</string>
+  <string name="somethingIsWrong">Something is wrong please try gain</string>
+  <string name="checkInternetConnection">Please check your Internet Connection</string>
+</resources>

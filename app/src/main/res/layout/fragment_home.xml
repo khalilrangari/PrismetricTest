@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+ xmlns:tools="http://schemas.android.com/tools"
+ android:layout_width="match_parent"
+ android:layout_height="match_parent"
+ xmlns:app="http://schemas.android.com/apk/res-auto">
+
+  <ScrollView
+   android:layout_width="match_parent"
+   android:layout_height="@dimen/zero_dp"
+   android:paddingBottom="@dimen/sixteen_dp"
+   app:layout_constraintTop_toTopOf="parent"
+   app:layout_constraintBottom_toBottomOf="parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content">
+
+      <androidx.recyclerview.widget.RecyclerView
+       android:id="@+id/rvCategory"
+       android:layout_width="@dimen/zero_dp"
+       android:layout_height="wrap_content"
+       android:layout_marginStart="@dimen/ten_sp"
+       android:layout_marginLeft="@dimen/ten_sp"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent" />
+
+      <androidx.viewpager.widget.ViewPager
+       android:id="@+id/viewPager"
+       android:layout_width="match_parent"
+       android:layout_height="@dimen/two_hundred_dp"
+       app:layout_constraintTop_toBottomOf="@+id/rvCategory" />
+
+      <com.google.android.material.tabs.TabLayout
+       android:id="@+id/tabLayout"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/viewPager"
+       app:tabBackground="@drawable/tab_selector"
+       app:tabGravity="center"
+       app:tabIndicatorHeight="@dimen/zero_dp" />
+
+      <androidx.appcompat.widget.AppCompatTextView
+       android:id="@+id/tvTrending"
+       style="@style/Text.14sp.black.montserrat_regular"
+       android:layout_width="@dimen/zero_dp"
+       android:layout_height="wrap_content"
+       android:layout_marginStart="@dimen/sixteen_dp"
+       android:text="@string/trending"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/tabLayout"
+       app:textAllCaps="true" />
+
+      <androidx.recyclerview.widget.RecyclerView
+       android:id="@+id/rvTrending"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="@dimen/six_dp"
+       app:layout_constraintTop_toBottomOf="@+id/tvTrending" />
+
+      <View
+       android:id="@+id/viewTrendingDivider"
+       android:layout_width="match_parent"
+       android:layout_height="@dimen/sixteen_dp"
+       android:layout_marginTop="@dimen/six_dp"
+       android:layout_marginBottom="@dimen/ten_dp"
+       android:background="@color/color_D0D0D0"
+       app:layout_constraintTop_toBottomOf="@+id/rvTrending" />
+
+      <androidx.appcompat.widget.AppCompatTextView
+       android:id="@+id/tvDealsOfTheDay"
+       style="@style/Text.14sp.black.montserrat_regular"
+       android:layout_width="@dimen/zero_dp"
+       android:layout_height="wrap_content"
+       android:layout_marginStart="@dimen/sixteen_dp"
+       android:text="@string/dealsOfTheDay"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/viewTrendingDivider"
+       app:textAllCaps="true" />
+
+      <androidx.recyclerview.widget.RecyclerView
+       android:id="@+id/rvDealsOfDay"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginStart="@dimen/sixteen_dp"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/tvDealsOfTheDay" />
+
+      <View
+       android:id="@+id/viewCategoriesDivider"
+       android:layout_width="match_parent"
+       android:layout_height="@dimen/sixteen_dp"
+       android:layout_marginTop="@dimen/six_dp"
+       android:layout_marginBottom="@dimen/ten_dp"
+       android:background="@color/color_D0D0D0"
+       app:layout_constraintTop_toBottomOf="@+id/rvDealsOfDay" />
+
+      <androidx.appcompat.widget.AppCompatTextView
+       android:id="@+id/tvCategories"
+       style="@style/Text.14sp.black.montserrat_regular"
+       android:layout_width="@dimen/zero_dp"
+       android:layout_height="wrap_content"
+       android:layout_marginStart="@dimen/sixteen_dp"
+       android:text="@string/categories"
+       android:gravity="center"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/viewCategoriesDivider"
+       app:textAllCaps="true" />
+
+      <androidx.recyclerview.widget.RecyclerView
+       android:id="@+id/rvCategories"
+       android:layout_width="@dimen/zero_dp"
+       android:layout_height="wrap_content"
+       android:layout_marginStart="@dimen/ten_sp"
+       android:layout_marginLeft="@dimen/ten_sp"
+       android:layout_marginBottom="@dimen/sixteen_dp"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/tvCategories" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+  </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

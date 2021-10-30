@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+ xmlns:app="http://schemas.android.com/apk/res-auto"
+ android:layout_width="match_parent"
+ android:layout_height="wrap_content"
+ android:layout_margin="@dimen/sixteen_dp"
+ android:padding="@dimen/sixteen_dp"
+ android:background="@drawable/category_details_item_bg">
+
+  <androidx.appcompat.widget.AppCompatTextView
+   android:id="@+id/tvName"
+   style="@style/Text.16sp.black.montserrat_medium"
+   android:layout_width="match_parent"
+   android:layout_height="wrap_content"
+   android:text="@string/logOut"
+   app:layout_constraintStart_toStartOf="parent"
+   app:layout_constraintTop_toTopOf="parent" />
+
+  <androidx.appcompat.widget.AppCompatTextView
+   android:id="@+id/tvEmail"
+   style="@style/Text.10sp.color_B7B7B7.montserrat_light"
+   android:layout_width="match_parent"
+   android:layout_height="wrap_content"
+   android:layout_marginTop="@dimen/six_dp"
+   android:text="@string/logOut"
+   app:layout_constraintStart_toStartOf="parent"
+   app:layout_constraintTop_toBottomOf="@+id/tvName" />
+
+  <androidx.appcompat.widget.AppCompatTextView
+   android:id="@+id/tvAddress"
+   style="@style/Text.10sp.color_B7B7B7.montserrat_light"
+   android:layout_width="match_parent"
+   android:layout_height="wrap_content"
+   android:layout_marginTop="@dimen/six_dp"
+   android:text="@string/logOut"
+   app:layout_constraintStart_toStartOf="parent"
+   app:layout_constraintTop_toBottomOf="@+id/tvEmail" />
+
+  <androidx.appcompat.widget.AppCompatTextView
+   android:id="@+id/tvCompanyDetails"
+   style="@style/Text.10sp.black.montserrat_regular"
+   android:layout_width="match_parent"
+   android:layout_height="wrap_content"
+   android:layout_marginTop="@dimen/six_dp"
+   android:text="@string/companyDetails"
+   app:layout_constraintStart_toStartOf="parent"
+   app:layout_constraintTop_toBottomOf="@+id/tvAddress" />
+
+  <androidx.appcompat.widget.AppCompatTextView
+   android:id="@+id/tvCompanyName"
+   style="@style/Text.10sp.color_B7B7B7.montserrat_regular"
+   android:layout_width="match_parent"
+   android:layout_height="wrap_content"
+   android:layout_marginTop="@dimen/six_dp"
+   android:text="@string/logOut"
+   android:drawableLeft="@drawable/com_name"
+   android:drawableStart="@drawable/com_name"
+   android:drawablePadding="@dimen/six_dp"
+   app:layout_constraintStart_toStartOf="parent"
+   app:layout_constraintTop_toBottomOf="@+id/tvCompanyDetails" />
+
+  <androidx.appcompat.widget.AppCompatTextView
+   android:id="@+id/tvWebsite"
+   style="@style/Text.10sp.color_B7B7B7.montserrat_regular"
+   android:layout_width="match_parent"
+   android:layout_height="wrap_content"
+   android:layout_marginTop="@dimen/six_dp"
+   android:text="@string/logOut"
+   android:drawableLeft="@drawable/webite"
+   android:drawableStart="@drawable/webite"
+   android:drawablePadding="@dimen/six_dp"
+   app:layout_constraintStart_toStartOf="parent"
+   app:layout_constraintTop_toBottomOf="@+id/tvCompanyName" />
+
+  <androidx.appcompat.widget.AppCompatTextView
+   android:id="@+id/tvCompanyNumber"
+   style="@style/Text.10sp.color_B7B7B7.montserrat_regular"
+   android:layout_width="match_parent"
+   android:layout_height="wrap_content"
+   android:layout_marginTop="@dimen/six_dp"
+   android:text="@string/logOut"
+   android:drawableLeft="@drawable/phone"
+   android:drawableStart="@drawable/phone"
+   android:drawablePadding="@dimen/six_dp"
+   app:layout_constraintStart_toStartOf="parent"
+   app:layout_constraintTop_toBottomOf="@+id/tvWebsite" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

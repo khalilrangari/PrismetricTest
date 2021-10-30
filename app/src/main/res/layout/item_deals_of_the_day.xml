@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+ xmlns:app="http://schemas.android.com/apk/res-auto"
+ android:layout_width="wrap_content"
+ android:layout_height="@dimen/two_hundred_seventy_dp"
+ android:layout_marginEnd="@dimen/ten_dp"
+ android:background="@drawable/squre_with_shadow">
+
+  <androidx.appcompat.widget.AppCompatImageView
+   android:id="@+id/ivDealsOfDay"
+   android:layout_width="@dimen/one_hundred_seventy_dp"
+   android:layout_height="@dimen/two_hundred_dp"
+   android:scaleType="fitXY"
+   app:layout_constraintStart_toStartOf="parent"
+   app:layout_constraintTop_toTopOf="parent"
+   app:srcCompat="@drawable/images1" />
+
+  <androidx.appcompat.widget.AppCompatTextView
+   android:id="@+id/tvOff"
+   style="@style/Text.16sp.black.montserrat_medium"
+   android:layout_width="@dimen/one_hundred_seventy_dp"
+   android:layout_height="wrap_content"
+   android:layout_marginTop="@dimen/ten_dp"
+   android:paddingStart="@dimen/sixteen_dp"
+   app:layout_constraintEnd_toEndOf="parent"
+   app:layout_constraintStart_toStartOf="parent"
+   app:layout_constraintTop_toBottomOf="@+id/ivDealsOfDay" />
+
+  <androidx.appcompat.widget.AppCompatTextView
+   android:id="@+id/tvName"
+   style="@style/Text.12sp.black.montserrat_regular"
+   android:layout_width="@dimen/one_hundred_seventy_dp"
+   android:layout_height="wrap_content"
+   android:layout_marginTop="@dimen/ten_dp"
+   android:paddingStart="@dimen/sixteen_dp"
+   app:layout_constraintEnd_toEndOf="parent"
+   app:layout_constraintStart_toStartOf="parent"
+   app:layout_constraintTop_toBottomOf="@+id/tvOff" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
